@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tidepools</title>
+
+    <!--
+
+    .===.      .                    .
+      |  o     |                    |
+      |  .  .-.| .-. .,-.  .-.  .-. | .==.
+      |  | (   |(.-' |   )(   )(   )| `==.
+      '-' `-`-'`-`=='|`-'  `-'  `-' `-`==' v0.2
+                     |
+                     '
+      Open Technology Institute & jrbaldwin
+
+     <3 <3 <3 ...haters gonna hate... <3 <3 <3 
+
+  //-->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/img/pound.ico">
+	
+    <!-- Styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="screen" />
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/lib/animate.css" media="screen, projection">    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-32066814-1']);
+          _gaq.push(['_trackPageview']);
+        
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        
+        </script>
+        
+        <!-- Place this render call where appropriate -->
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+        
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+        
+
+</head>
+<body class="pull_top">
+    <div class="navbar transparent navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="index.html">
+                <strong>Tidepools</strong>
+            </a>
+            <div class="nav-collapse collapse">
+                <ul class="nav pull-right">
+                    <li><a href="about-us.html"><img src="img/svg/history.svg" style="padding-right:4px;"/>HISTORY</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/svg/wild.svg" style="padding-right:4px;"/>
+                            IN THE WILD
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="features.html">Red Hook</a></li>
+                            <li><a href="services.html">Sudoroom</a></li>
+                            <li><a href="services.html">Panayotis Euro Install</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://wiki.tidepools.co/view/Main_Page"><img src="img/svg/wiki.svg" style="padding-right:4px;"/>WIKI</a></li>
+                    <li><a href="contact.html"><img src="img/svg/news.svg" style="padding-right:4px;"/>NEWS</a></li>
+                    <li><a href="http://www.tidepools.co/redhook.html"><img src="img/svg/demo.svg" style="padding-right:4px;"/>DEMO</a></li>
+                    <li><a href="https://github.com/opentechinstitute/TidePools/"><img src="img/svg/code.svg" style="padding-right:4px;"/>CODE</a></li>
+                    <li><a href="blog.html"><img src="img/svg/design.svg" style="padding-right:4px;"/>DESIGN</a></li>
+                    <li><a href="about-us.html"><img src="img/svg/about.svg" style="padding-right:4px;"/>ABOUT</a></li>
+                    <!-- <li><a class="btn-header" href="sign-up.html">Sign up</a></li>
+                    <li><a class="btn-header" href="sign-in.html">Sign in</a></li> -->
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="maplogo" class="" style="cursor:crosshair;">
+
+        <iframe id="treasure" style="display:none; " src="http://localhost:8888/treasuremap.php" width="100%" height="100%" scrolling="no" frameborder="0" seamless="yes"></iframe>
+     
+    </section>
+
+
+
+
+    <div id="showcase">
+        <div class="container">
+
+            <div id="socialbuttons">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="jrbaldwinn">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+
+                <a href="http://www.tumblr.com/share" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; margin-right:10px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;">Share on Tumblr</a>
+
+                <div class="fb-like" data-href="http://tidepools.co" data-send="false" data-layout="button_count" data-width="128" data-show-faces="false" data-action="recommend"></div>
+
+                <g:plusone size="small"></g:plusone>
+            </div>
+
+            <div class="section_header">
+                <h3>Re-Skinnable & Collaborative Time-Based Mapping, Socializing, API-powered microcosms</h3>
+                <h4>Grows & Fluctuates with Communities over time</h4>
+            </div>            
+            <div class="row feature_wrapper">
+                <!-- Features Row -->
+                <div class="features_op1_row">
+                    <!-- Feature -->
+                    <div class="span4 feature first">
+                        <div class="img_box">
+                            <a href="services.html">
+                                <img src="http://www.jrbaldwin.com/tidepools/5.png">
+                                <span class="circle"> 
+                                    <span class="plus">&#43;</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h6>Community Design Process</h6>
+                            <p>
+                                There are many variations of passages of generators on the  embarrassing hidden in   content here making it look like. Highlight use cases. Tailored for USE CASE PERSONA list. 
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Feature -->
+                    <div class="span4 feature">
+                        <div class="img_box">
+                            <a href="services.html">
+                                <img src="http://www.jrbaldwin.com/tidepools/6.png">
+                                <span class="circle"> 
+                                    <span class="plus">&#43;</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h6>In-Depth Customization</h6>
+                            <p>
+                                There are many variations of passages of generators on the  embarrassing hidden in   content here making it look like.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Feature -->
+                    <div class="span4 feature last">
+                        <div class="img_box">
+                            <a href="services.html">
+                                <img src="http://www.jrbaldwin.com/tidepools/1.png">
+                                <span class="circle"> 
+                                    <span class="plus">&#43;</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h6>Rich Interaction</h6>
+                            <p>
+                                Drag drop, threaded conversations, text to map, time based landmarks, landmarks grow/change with fluctuating activity. API plugins. full spectrum of devices to interact on same platform. device-inclusive, sensors, feature phones, smart phones, tablets, laptops. equal voice on all platforms. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="features">
+        <div class="container">
+            <div class="section_header">
+                <h3>Features</h3>
+            </div> 
+            <div class="row feature">
+                <div class="span6">
+                    <img src="http://www.jrbaldwin.com/tidepools/2.png" />
+                </div>
+                <div class="span6 info">
+                    <h3>
+                        <img src="img/features-ico1.png" />
+                        Custom maps, layers, landmarks, icons
+                    </h3>
+                    <p>
+                        Each community, temporary or historical,  has a different vibe. custom data sources. tailorable. customization from the look & feel, to code, to backend code (databases), whatev. 
+                    </p>
+                </div>
+            </div>
+            <div class="row feature ss">
+                <div class="span6 info">
+                    <h3>
+                        <img src="img/features-ico2.png" />
+                        Drag & Drop, SMS to Map, Comments. Time based events & landmarks.
+                    </h3>
+                    <p>
+                        Threaded SMS. Like placing on community bulletin board. Time based landmarks pop up, fade away based based on time.
+                    </p>
+                </div>
+                <div class="span6">
+                    <img src="img/showcase2.png" class="pull-right" />
+                </div>
+            </div>
+            <div class="row feature ss">
+                <div class="span6">
+                    <img src="img/showcase3.png" />
+                </div>
+                <div class="span6 info">
+                    <h3>
+                        <img src="img/features-ico3.png" />
+                        Flexible Platform, Data Stored on computer server or in the cloud
+                    </h3>
+                    <p>
+                        Even without Internet, map tiles and data stored locally. Accessible during emergencies, areas without internet access, over wifi mesh
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="showcase">
+        <div class="container">
+
+            <div class="section_header">
+                <h3>Current Apps</h3>
+            </div>            
+            <div class="row feature_wrapper">
+                <!-- Features Row -->
+                <div class="features_op1_row">
+                    <!-- Feature -->
+                    <div class="span4 feature first">
+                        <div class="img_box">
+                            <a href="https://rhiwifi.co/status/">
+                                <img src="img/statuspic.png">
+                                <span class="circle"> 
+                                    <span class="plus">&#43;</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h6>Status / SMS</h6>
+                            <p>
+                                Developed after Sandy in Red Hook. Threaded conversation. Encrypted phone numbers. 
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Feature -->
+                    <div class="span4 feature">
+                        <div class="img_box">
+                            <a href="https://rhiwifi.co/bus/">
+                                <img src="img/bus.png">
+                                <span class="circle"> 
+                                    <span class="plus">&#43;</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h6>Where's the B61 Bus?</h6>
+                            <p>
+                                There are many variations of passages of generators on the  embarrassing hidden in   content here making it look like.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Feature -->
+                    <div class="span4 feature last">
+                        <div class="img_box">
+                            <a href="https://rhiwifi.co/stopfrisk/">
+                                <img src="img/stopfrisk.png">
+                                <span class="circle"> 
+                                    <span class="plus">&#43;</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h6>Stop & Frisk</h6>
+                            <p>
+                                Drag drop, threaded conversations, text to map, time based landmarks, landmarks grow/change with fluctuating activity. API plugins.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+
+
+    <div id="Coming Soon">
+        <div class="container">
+            <div class="section_header">
+                <h3>Coming Soon</h3>
+            </div> 
+            <div class="row feature">
+                <div class="span6">
+                    <img src="img/api.png" />
+                </div>
+                <div class="span6 info">
+                    <h3>
+                        <img src="img/features-ico1.png" />
+                        Plug & Play Local & Remote APIs. Local Data Ecosystem, Sesnors, API inputs & outputs, social media absorbed
+                    </h3>
+                    <p>
+                       Community chooses what to share with the internet, what to keep local. secure layers. geo-fenced layers. Vojo too. Stored on community server. add visualight as output to graphic, some data shared outside the community.
+                    </p>
+                </div>
+            </div>
+            <div class="row feature ss">
+                <div class="span6 info">
+                    <h3>
+                        <img src="img/features-ico2.png" />
+                        Mobile & Tablet/Desktop Design Overhaul. App creation tools. 
+                    </h3>
+                    <p>
+                        Blah blah 
+                    </p>
+                </div>
+                <div class="span6">
+                    <img src="img/mobile.png" class="pull-right" />
+                </div>
+            </div>
+            <div class="row feature ss">
+                <div class="span6">
+                    <img src="img/cycle.jpg" />
+                </div>
+                <div class="span6 info">
+                    <h3>
+                        <img src="img/features-ico3.png" />
+                        Integrates with local weather, timezone day & nights, seasons
+                    </h3>
+                    <p>
+                        Synch up with rythmn, vibe of community every minute of the day. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+   <!--  <div id="clients">
+        <div class="container">
+            <div class="section_header">
+                <h3>Clients</h3>
+            </div>
+            <div class="row">
+                <div class="span2 client">
+                    <div class="img client1"></div>
+                </div>
+                <div class="span2 client">
+                    <div class="img client2"></div>
+                </div>
+                <div class="span2 client">
+                    <div class="img client3"></div>
+                </div>
+                <div class="span2 client">
+                    <div class="img client1"></div>
+                </div>
+                <div class="span2 client">
+                    <div class="img client2"></div>
+                </div>
+                <div class="span2 client">
+                    <div class="img client3"></div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- starts footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row sections">
+                <div class="span4 recent_posts">
+                    <h3 class="footer_header">
+                        Recent Posts
+                    </h3>
+                    <div class="post">
+                        <a href="blogpost.html">
+                            <img src="img/recent_post1.png" class="img-circle" />
+                        </a>
+                        <div class="date">
+                            Wed, 12 Dec
+                        </div>
+                        <a href="blogpost.html" class="title">
+                            Randomised words which don't look embarrasing hidden.
+                        </a>
+                    </div>
+                    <div class="post">
+                        <a href="blogpost.html">
+                            <img src="img/recent_post2.png" class="img-circle" />
+                        </a>
+                        <div class="date">
+                            Mon, 12 Dec
+                        </div>
+                        <a href="blogpost.html" class="title">
+                            Randomised words which don't look embarrasing hidden.
+                        </a>
+                    </div>
+                </div>
+                <div class="span4 testimonials">
+                    <h3 class="footer_header">
+                        Testimonials
+                    </h3>
+                    <div class="wrapper">
+                        <div class="quote">
+                            <span>“</span>
+                            There are many variations of passages of randomised words which don't look even slightly believable. You need to be sure there isn't anything embarrassing of text.
+                            <span></span>
+                        </div>
+                        <div class="author">
+                            <img src="img/user-display.png" />
+                            <div class="name">Alejandra Galvan Castillo</div>
+                            <div class="info">
+                                Details Canvas
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="span4 contact">
+                    <h3 class="footer_header">
+                        Contact
+                    </h3>
+                    <form action="#" method="post">
+                        <input type="text" placeholder="Your name" />
+                        <input type="text" placeholder="Your email" />
+                        <textarea rows="3" placeholder="Message"></textarea>
+                        <input type="submit" value="Send" />
+                    </form>
+                </div>
+            </div>
+            <div class="row credits">
+                <div class="span12">
+                    <div class="row social">
+                        <div class="span12">
+                            <a href="#" class="facebook">
+                                <span class="socialicons ico1"></span>
+                                <span class="socialicons_h ico1h"></span>
+                            </a>
+                            <a href="https://twitter.com/TidepoolsOTI" class="twitter">
+                                <span class="socialicons ico2"></span>
+                                <span class="socialicons_h ico2h"></span>
+                            </a>
+                            <a href="#" class="gplus">
+                                <span class="socialicons ico3"></span>
+                                <span class="socialicons_h ico3h"></span>
+                            </a>
+                            <a href="#" class="flickr">
+                                <span class="socialicons ico4"></span>
+                                <span class="socialicons_h ico4h"></span>
+                            </a>
+                            <a href="#" class="pinterest">
+                                <span class="socialicons ico5"></span>
+                                <span class="socialicons_h ico5h"></span>
+                            </a>
+                            <a href="#" class="dribble">
+                                <span class="socialicons ico6"></span>
+                                <span class="socialicons_h ico6h"></span>
+                            </a>
+                            <a href="#" class="behance">
+                                <span class="socialicons ico7"></span>
+                                <span class="socialicons_h ico7h"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row copyright">
+                        <div class="span12">
+                            <img src="img/cc.png" style="width:20px;">  2013 Open Technology Institute & jrbaldwin <p>Attribution-NonCommercial-ShareAlike 3.0 Unported Creative Commons License: <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></p>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/theme.js"></script>
+
+    <script type="text/javascript" src="js/index-slider.js"></script>	
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+            $('#treasure').fadeIn('slow');
+
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tidepools</title>
+
+    <!--
+
+    .===.      .                    .
+      |  o     |                    |
+      |  .  .-.| .-. .,-.  .-.  .-. | .==.
+      |  | (   |(.-' |   )(   )(   )| `==.
+      '-' `-`-'`-`=='|`-'  `-'  `-' `-`==' v0.2
+                     |
+                     '
+      Open Technology Institute & jrbaldwin
+
+     <3 <3 <3 ...haters gonna hate... <3 <3 <3 
+
+  //-->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/img/pound.ico">
+	
+    <!-- Styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="screen" />
+
+    <link rel="stylesheet" href="css/lib/flexslider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/lib/animate.css" media="screen, projection">    
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+ 
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+        <!-- Modernizr -->
+    <script src="js/modernizr.js"></script>
+
+
+    <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-32066814-1']);
+          _gaq.push(['_trackPageview']);
+        
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        
+        </script>
+        
+        <!-- Place this render call where appropriate -->
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+        
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+        
+
+</head>
+<body class="pull_top">
+    <div class="navbar transparent navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="index.html">
+                <strong>Tidepools</strong>
+            </a>
+            <div class="nav-collapse collapse">
+                <ul class="nav pull-right">
+                    <li><a href="history.html"><img src="img/svg/history.svg" style="padding-right:4px;"/>HISTORY</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/svg/wild.svg" style="padding-right:4px;"/>
+                            IN THE WILD
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://tidepools.co/redhook.html">Red Hook</a></li>
+                            <li><a href="http://tidepools.co/gezi">Gezi</a></li>
+                            <li><a href="http://tidepools.co/testbed/">AMC Conference</a></li>
+                            <li><a href="http://tamale.sudoroom.org:9090/">Sudoroom</a></li>
+                            <li><a href="services.html">Panayotis Euro Install</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://wiki.tidepools.co/view/Main_Page"><img src="img/svg/wiki.svg" style="padding-right:4px;"/>WIKI</a></li>
+                    <!-- <li><a href="blog.html"><img src="img/svg/news.svg" style="padding-right:4px;"/>NEWS</a></li> -->
+                    <li><a href="https://github.com/opentechinstitute/TidePools"><img src="img/svg/code.svg" style="padding-right:4px;"/>CODE</a></li>
+                    <li><a href="design.html"><img src="img/svg/design.svg" style="padding-right:4px;"/>DESIGN</a></li>
+                    <li><a href="contact.html"><img src="img/svg/about.svg" style="padding-right:4px;"/>ABOUT</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="maplogo" class="" style="cursor:crosshair;">
+
+        <iframe id="treasure" style="display:none; " src="http://localhost:8888/treasuremap.php" width="100%" height="100%" scrolling="no" frameborder="0" seamless="yes"></iframe>
+     
+    </section>
+
+
+
+
+    <div id="showcase">
+        <div class="container">
+
+            <div id="socialbuttons">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="jrbaldwinn">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+
+                <a href="http://www.tumblr.com/share" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; margin-right:10px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;">Share on Tumblr</a>
+
+                <div class="fb-like" data-href="http://tidepools.co" data-send="false" data-layout="button_count" data-width="128" data-show-faces="false" data-action="recommend"></div>
+
+          <!--       <iframe width="85" height="20" src="github-btn.html?user=markdotto&repo=github-buttons&type=watch&count=true" frameborder="0" scrolling="0" allowtransparency="true"> -->
+
+                <g:plusone size="small"></g:plusone>
+            </div>
+
+            <div class="section_header">
+                <h3>Collaborative Time-Based Community-Centric Social Mapping Platform</h3>
+                <h4>Multi-platform, Re-Skinnable, Customizable, Mesh Friendly</h4>
+            </div>            
+            <div class="row feature_wrapper">
+                <!-- Features Row -->
+                <div class="features_op1_row">
+                    <!-- Feature -->
+                    <div class="span4 feature first">
+                        <div class="img_box">
+                            <a href="history.html">
+                                <img src="http://www.jrbaldwin.com/tidepools/5.png">
+                                <span class="circle"> 
+                                    <span class="plus">&#43;</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h6>Community Design Process</h6>
+                            <p>
+                                Great tools are driven by community needs. Tidepools emerged from many brainstorming sessions with community members in Red Hook, Brooklyn and has continued to evolve as it has been re-skinned and modified by other communities to suit their needs.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Feature -->
+                    <div class="span4 feature">
+                         <div class="img_box">
+                            <a href="#">
+                                
+
+                                <div class="flexslider">
+                                  <ul class="slides">
+                                    <li>
+                                      <img src="http://www.jrbaldwin.com/tidepools/6.png" />
+                                    </li>
+                                    <li>
+                                      <img src="img/gezi.png" />
+                                    </li>
+                                    <li>
+                                      <img src="img/amc.png" />
+                                    </li>
+                                  </ul>
+                                </div>
+
+
+                                <span class="circle"> 
+                                    <span class="plus">&#43;</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h6>In-Depth Customization</h6>
+                            <p>
+                                Tidepools is designed to be modular so that it is very easy to customize and re-configure to meet the needs of the community who wants to use it. Check out the variations of Tidepools - "In The Wild" above to see how Tidepools is used in Red Hook, Brooklyn, or for Gezi Square in Turkey or for the <a href="http://amc.alliedmedia.org">AMC Conference</a> in Detroit.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Feature -->
+                    <div class="span4 feature last">
+                        <div class="img_box">
+                            <a href="design.html">
+                                <img src="http://www.jrbaldwin.com/tidepools/1.png">
+                                <span class="circle"> 
+                                    <span class="plus">&#43;</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h6>Rich Interaction</h6>
+                            <p>
+                            Unlike many mapping tools, which require users to fill out a form, or have location services turned on, Tidepools allows users to interact via drag and drop. Users can engage in threaded conversations about multiple types of content and add to the map via SMS text. All content is stored not just by location but also time, allowing landmarks to grow and change with fluctuating activity.
+                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="aboutus">
+        <div class="container">
+            <div class="section_header">
+                <h3>Overview</h3>
+            </div>
+            <div class="row">
+                <div class="span6 intro">
+                    <p>
+                        Tidepools is a re-skinnable collaborative mobile mapping platform for gathering and sharing hyperlocal information and culture through expressive, community maps and data feeds, enabling greater connectivity and communication among neighbors and local organizations.
+                        <br /><br />
+                        Tidepools bridges the digital and physical space of a neighborhood, storing its data on local servers and broadcasted over WiFi so it can run even without reliance on an Internet connection. It integrates location-specific civic data in situ, including real time transit notifications and community safety issues. Community members can share events, user-created map layers and landmarks, and other local temporal information, creating a historical geospatial community database. 
+                    </p>
+
+                </div>
+                <div class="span6 flexslider">
+                      <ul class="slides">
+                        <li>
+                          <img src="img/gezi.png" />
+                        </li>
+                        <li>
+                          <img src="http://www.jrbaldwin.com/tidepools/2.png" />
+                        </li>
+                        <li>
+                          <img src="img/amc.png" />
+                        </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<br>
+
+
+    <div id="showcase">
+        <div class="container">
+
+            <div class="section_header">
+                <h3>Current Apps</h3>
+            </div>            
+            <div class="row feature_wrapper">
+                <!-- Features Row -->
+                <div class="features_op1_row">
+                    <!-- Feature -->
+                    <div class="span4 feature first">
+                        <div class="img_box">
+                            <a href="https://rhiwifi.co/status/">
+                                <img src="img/statuspic.png">
+                                <span class="circle"> 
+                                    <span class="plus">&#43;</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h6>Status / SMS</h6>
+                            <p>
+                                In support of relief efforts and needs during Hurricane Sandy, the team added the ability to SMS text to the map, so that an internet connection nor a smart phone were needed to allow residents to send needs, issues information to the volunteer team. The residents phone numbers are protected using encyption, texts are geocoded using natural language locations, and conversations are threaded related to allow users monitoring the map to maintain contact with an SMS contributor. 
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Feature -->
+                    <div class="span4 feature">
+                        <div class="img_box">
+                            <a href="https://rhiwifi.co/bus/">
+                                <img src="img/bus.png" >
+                                <span class="circle"> 
+                                    <span class="plus">&#43;</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h6>Where's the B61 Bus?</h6>
+                            <p>
+                                The only transit available within Red Hook are <strong>two</strong> bus lines, and as is the case with many of the busses in NYC, the busses are frequently late or off their schedule. One of the busses, the B61, now has real time information and tracking as part of the NYC MTA's Bustime project. "Where's the B61?" is a localized app that provides information just about the B61 for residents. The App is available over the wifi, so that residents only need a wifi-enabled device to access the information.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Feature -->
+                    <div class="span4 feature last">
+                        <div class="img_box">
+                            <a href="https://rhiwifi.co/stopfrisk/">
+                                <img src="img/stopfrisk.png" >
+                                <span class="circle"> 
+                                    <span class="plus">&#43;</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h6>Stop & Frisk</h6>
+                            <p>
+                                The NYPD Stop, Question, and Frisk program has been the subject of controversy around the city and is currently the subject of active litigation. Residents in Red Hook, Brooklyn were concerned about activity in the neighborhood and wanted a way to collect their own data to compare with the NYPD reports. This app allows the residents to report if incidents happen to them or if they see incidents occur. All of the data is stored locally and owned by the community.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<br>
+
+ <div id="showcase">
+        <div class="container">
+
+            <div class="section_header">
+                <h3>Coming Soon</h3>
+            </div>            
+            <div class="row feature_wrapper">
+                <!-- Features Row -->
+                <div class="features_op1_row">
+                    <!-- Feature -->
+                    <div class="span4 feature first">
+                        <div class="img_box">
+                            <a href="#">
+                                <img src="img/api.png">
+                                <span class="circle"> 
+                                    <span class="plus">&#43;</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h6>APIs, APIs, APIs</h6>
+                            <p>
+                                We're making it easier to pull in your favorite web and social media content. Although Tidepools is designed to be a local community tool, we want to be compatible with existing tools that various communities use, such as Twitter, Instagram, Tumblr, Flickr, Vine, etc etc. We are working on an easy plug & play interface to add the external systems you want to your local data ecosystem.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Feature -->
+                    <div class="span4 feature">
+                        <div class="img_box">
+                            <a href="#">
+                                <img src="img/mobile.png">
+                                <span class="circle"> 
+                                    <span class="plus">&#43;</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h6>Multi-platform User Interface: Mobile, Table, & Desktop</h6>
+                            <p>
+                                The customizable Tidepools interface will have a mobile, tablet and desktop interfaces, allowing users to interact with the tool from a variety of devices. 
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Feature -->
+                    <div class="span4 feature last">
+                        <div class="img_box">
+                            <a href="#">
+                                <img src="img/cycle.jpg">
+                                <span class="circle"> 
+                                    <span class="plus">&#43;</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h6>Integrates with local weather, timezone day & nights, seasons</h6>
+                            <p>
+                                The Tidepools environment is response to the weather, time and seasons, allowing community members to experience information not just in locational context but also in a temporal context. Tidepools will also be able to collect local environmental data via sensors.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<br>
+
+
+
+   <!--  <div id="clients">
+        <div class="container">
+            <div class="section_header">
+                <h3>Clients</h3>
+            </div>
+            <div class="row">
+                <div class="span2 client">
+                    <div class="img client1"></div>
+                </div>
+                <div class="span2 client">
+                    <div class="img client2"></div>
+                </div>
+                <div class="span2 client">
+                    <div class="img client3"></div>
+                </div>
+                <div class="span2 client">
+                    <div class="img client1"></div>
+                </div>
+                <div class="span2 client">
+                    <div class="img client2"></div>
+                </div>
+                <div class="span2 client">
+                    <div class="img client3"></div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- starts footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row sections">
+            <div class="row credits">
+                <div class="span12">
+                    <div class="row social">
+                        <div class="span12">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=tidepools.co" target="_blank" class="facebook">
+                                <span class="socialicons ico1"></span>
+                                <span class="socialicons_h ico1h"></span>
+                            </a>
+                            <a href="https://twitter.com/TidepoolsOTI" class="twitter">
+                                <span class="socialicons ico2"></span>
+                                <span class="socialicons_h ico2h"></span>
+                            </a>
+                            <a href="http://www.tumblr.com/share/link?url=tidepools.co" class="tumblr">
+                                <span class="socialicons ico2"></span>
+                                <span class="socialicons_h ico2h"></span>
+                            </a>
+                            <a href="https://plus.google.com/share?url=tidepools.co" class="gplus">
+                                <span class="socialicons ico3"></span>
+                                <span class="socialicons_h ico3h"></span>
+                            </a>
+                            <a href="http://pinterest.com/pinthis?url=tidepools.co" class="pinterest">
+                                <span class="socialicons ico5"></span>
+                                <span class="socialicons_h ico5h"></span>
+                            </a>
+                         <!--    <a href="#" class="dribble">
+                                <span class="socialicons ico6"></span>
+                                <span class="socialicons_h ico6h"></span>
+                            </a>
+                            <a href="#" class="behance">
+                                <span class="socialicons ico7"></span>
+                                <span class="socialicons_h ico7h"></span>
+                            </a>
+                        --> </div>
+                    </div>
+                    <div class="row copyright">
+                        <div class="span12">
+                            <img src="img/cc.png" style="width:20px;">  2013 Open Technology Institute & jrbaldwin <p>Attribution-NonCommercial-ShareAlike 3.0 Unported Creative Commons License: <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></p>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/theme.js"></script>
+
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script> 
+
+
+    <script type="text/javascript">
+
+        $(window).load(function() {
+
+
+          $('.flexslider').flexslider({
+            animation: "fade",
+            slideshowSpeed: 4000,
+            animationSpeed: 950,
+            controlNav: false,
+            directionNav: false
+          });
+        });
+
+        $(document).ready(function(){
+
+            $('#treasure').fadeIn('slow');
+
+        });
+
+    </script>
+
+</body>
+</html>
