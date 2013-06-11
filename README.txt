@@ -1,4 +1,9 @@
-Clean Canvas Bootstrap Theme
+Tidepools Website - New Code
+
+for http://tidepools.co
+
+
+Using the Clean Canvas Bootstrap Theme
 
 Credits:
 
